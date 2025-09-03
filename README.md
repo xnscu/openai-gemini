@@ -34,7 +34,7 @@ which is necessary for continuous integration (CI).
 
 ### Deploy with Vercel
 
- [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/PublicAffairs/openai-gemini&repository-name=my-openai-gemini)
+ [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/xnscu/openai-gemini&repository-name=my-openai-gemini)
 - Alternatively can be deployed with [cli](https://vercel.com/docs/cli):
   `vercel deploy`
 - Serve locally: `vercel dev`
@@ -43,20 +43,20 @@ which is necessary for continuous integration (CI).
 
 ### Deploy to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/PublicAffairs/openai-gemini&integrationName=integrationName&integrationSlug=integrationSlug&integrationDescription=integrationDescription)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/xnscu/openai-gemini&integrationName=integrationName&integrationSlug=integrationSlug&integrationDescription=integrationDescription)
 - Alternatively can be deployed with [cli](https://docs.netlify.com/cli/get-started/):
   `netlify deploy`
 - Serve locally: `netlify dev`
 - Two different api bases provided:
-  - `/v1` (e.g. `/v1/chat/completions` endpoint)  
+  - `/v1` (e.g. `/v1/chat/completions` endpoint)
     _Functions_ [limits](https://docs.netlify.com/functions/get-started/?fn-language=js#synchronous-function-2)
-  - `/edge/v1`  
+  - `/edge/v1`
     _Edge functions_ [limits](https://docs.netlify.com/edge-functions/limits/)
 
 
 ### Deploy to Cloudflare
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/PublicAffairs/openai-gemini)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/xnscu/openai-gemini)
 - Alternatively can be deployed manually pasting content of [`src/worker.mjs`](src/worker.mjs)
   to https://workers.cloudflare.com/playground (see there `Deploy` button).
 - Alternatively can be deployed with [cli](https://developers.cloudflare.com/workers/wrangler/):
@@ -67,7 +67,7 @@ which is necessary for continuous integration (CI).
 
 ### Deploy to Deno
 
-See details [here](https://github.com/PublicAffairs/openai-gemini/discussions/19).
+See details [here](https://github.com/xnscu/openai-gemini/discussions/19).
 
 
 ### Serve locally - with Node, Deno, Bun
@@ -92,7 +92,7 @@ To utilize it, you should enter your API address and your Gemini API key into th
 > Not all software tools allow overriding the OpenAI endpoint, but many do
 > (however these settings can sometimes be deeply hidden).
 
-Typically, you should specify the API base in this format:  
+Typically, you should specify the API base in this format:
 `https://my-super-proxy.vercel.app/v1`
 
 The relevant field may be labeled as "_OpenAI proxy_".
@@ -111,7 +111,7 @@ OPENAI_API_BASE="https://my-super-proxy.vercel.app/v1"
 
 ## Models
 
-Requests use the specified [model] if its name starts with "gemini-", "gemma-", "learnlm-", 
+Requests use the specified [model] if its name starts with "gemini-", "gemma-", "learnlm-",
 or "models/". Otherwise, these defaults apply:
 
 - `chat/completions`: `gemini-2.5-flash`
